@@ -1,0 +1,8 @@
+<p>Counter: {{ count$ | async }}</p>
+
+<label for="factorInput">Factor:</label>
+<input id="factorInput" type="number" value="1" placeholder="Enter factor" #factorInput />
+<label for="incrementInput">Increment:</label>
+<button (click)="increment()">Increment</button>
+
+<button (click)="multiply(factorInput.value)">Multiply</button>
